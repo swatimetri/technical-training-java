@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class quadratic {
+    static int a;
+    static int b;
+    static int c;
+    static double d;
+
+    public static void main(String[] Strings) {
+        Scanner input = new Scanner(System.in);
+        a = input.nextInt();
+        b = input.nextInt();
+        c = input.nextInt();
+        d = Math.sqrt(b * b - 4 * a * c);
+        if (d > 0) {
+            System.out.println("The roots are unique");
+        } else if (d == 0) {
+            System.out.println("roots are equal");
+        } else {
+            System.out.println("Roots are not real.");
+        }
+    }
+}
